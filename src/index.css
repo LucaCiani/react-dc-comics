@@ -14,6 +14,8 @@ body {
     max-width: 1200px;
 }
 
+/* HEADER ZONE */
+
 .header-flex {
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,8 @@ body {
     color: #0282f9;
     border-bottom: solid 5px #0282f9;
 }
+
+/* MAIN ZONE */
 
 .content {
     background-color: black;
@@ -61,4 +65,36 @@ body {
 
 .shop-img {
     height: 80%;
+}
+
+/* FOOTER ZONE */
+
+footer {
+    background-color: #303030;
+}
+
+.footer-nav {
+    height: 300px;
+    background-image: url(/footer-bg.jpg);
+}
+
+.small-footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-up {
+    padding: 15px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px #0282f9;
+}
+
+.social {
+    color: #0282f9;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }

@@ -81,6 +81,31 @@ function App() {
                     </div>
                 </div>
             </main>
+            <footer>
+                <div className="footer-nav">
+                    <div className="container">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="small-footer">
+                        <div>
+                            <button className="sign-up" type="button">
+                                SIGN-UP NOW!
+                            </button>
+                        </div>
+                        <div className="social">
+                            <span className="follow-us">FOLLOW US</span>
+                            <img src="/footer-facebook.png" alt="facebook" />
+                            <img src="/footer-twitter.png" alt="twitter" />
+                            <img src="/footer-youtube.png" alt="youtube" />
+                            <img src="/footer-pinterest.png" alt="pinterest" />
+                            <img src="/footer-periscope.png" alt="periscope" />
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </>
     );
 }
