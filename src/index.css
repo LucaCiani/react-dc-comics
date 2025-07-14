@@ -35,3 +35,30 @@ body {
     color: #0282f9;
     border-bottom: solid 5px #0282f9;
 }
+
+.content {
+    background-color: black;
+    color: white;
+}
+
+.shop {
+    background-color: #0282f9;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+    padding: 20px 0;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.shop-img {
+    height: 80%;
+}

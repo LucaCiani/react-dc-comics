@@ -31,9 +31,54 @@ function App() {
                 </div>
             </header>
             <main>
-                <div className="container">
-                    <div className="content"> next content</div>
-                    <div className="shop"></div>
+                <div className="content">
+                    <div className="container">next content</div>
+                </div>
+                <div className="shop">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
+                                <img
+                                    className="shop-img"
+                                    src="/buy-comics-digital-comics.png"
+                                    alt="tablet"
+                                />
+                                <span>DIGITAL COMICS</span>
+                            </div>
+                            <div className="col">
+                                <img
+                                    className="shop-img"
+                                    src="/buy-comics-merchandise.png"
+                                    alt="t-shirt"
+                                />
+                                <span>DC MERCHANDISE</span>
+                            </div>
+                            <div className="col">
+                                <img
+                                    className="shop-img"
+                                    src="/buy-comics-subscriptions.png"
+                                    alt="subsription"
+                                />
+                                <span>SUBSCRIPTION</span>
+                            </div>
+                            <div className="col">
+                                <img
+                                    className="shop-img"
+                                    src="/buy-comics-shop-locator.png"
+                                    alt="locator"
+                                />
+                                <span>COMIC SHOP LOCATOR</span>
+                            </div>
+                            <div className="col">
+                                <img
+                                    className="shop-img"
+                                    src="/buy-dc-power-visa.svg"
+                                    alt="credit card"
+                                />
+                                <span>DC POWER VISA</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </>
