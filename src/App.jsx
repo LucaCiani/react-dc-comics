@@ -1,3 +1,5 @@
+import comics from "./assets/data/comics";
+
 function App() {
     return (
         <>
@@ -31,61 +33,158 @@ function App() {
                 </div>
             </header>
             <main>
+                <div className="jumbotron"></div>
                 <div className="content">
-                    <div className="container">next content</div>
-                </div>
-                <div className="shop">
                     <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <img
-                                    className="shop-img"
-                                    src="/buy-comics-digital-comics.png"
-                                    alt="tablet"
-                                />
-                                <span>DIGITAL COMICS</span>
-                            </div>
-                            <div className="col">
-                                <img
-                                    className="shop-img"
-                                    src="/buy-comics-merchandise.png"
-                                    alt="t-shirt"
-                                />
-                                <span>DC MERCHANDISE</span>
-                            </div>
-                            <div className="col">
-                                <img
-                                    className="shop-img"
-                                    src="/buy-comics-subscriptions.png"
-                                    alt="subsription"
-                                />
-                                <span>SUBSCRIPTION</span>
-                            </div>
-                            <div className="col">
-                                <img
-                                    className="shop-img"
-                                    src="/buy-comics-shop-locator.png"
-                                    alt="locator"
-                                />
-                                <span>COMIC SHOP LOCATOR</span>
-                            </div>
-                            <div className="col">
-                                <img
-                                    className="shop-img"
-                                    src="/buy-dc-power-visa.svg"
-                                    alt="credit card"
-                                />
-                                <span>DC POWER VISA</span>
-                            </div>
+                        <div>
+                            <span className="current-series h3 p-1">
+                                CURRENT SERIES
+                            </span>
+                        </div>
+                        <div className="row row-cols-6 py-5">
+                            {comics.map((comic) => (
+                                <div className="col" key={comic.id}>
+                                    <div className="card">
+                                        <img
+                                            className="card-img-top"
+                                            src={comic.thumb}
+                                            alt=""
+                                        />
+                                        <div className="card-body">
+                                            <h5 className="card-title">
+                                                {comic.title}
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
+                <section className="shop">
+                    <div className="container">
+                        <div className="row row-cols-5 align-items-center g-5">
+                            <div className="col">
+                                <div className="card">
+                                    <img
+                                        className="card-img-custom"
+                                        src="/buy-comics-digital-comics.png"
+                                        alt="tablet"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            DIGITAL COMICS
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card">
+                                    <img
+                                        className="card-img-custom"
+                                        src="/buy-comics-merchandise.png"
+                                        alt="t-shirt"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            DC MERCHANDISE
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card">
+                                    <img
+                                        className="card-img-custom"
+                                        src="/buy-comics-subscriptions.png"
+                                        alt="subsription"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            SUBSCRIPTION
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card">
+                                    <img
+                                        className="card-img-custom"
+                                        src="/buy-comics-shop-locator.png"
+                                        alt="locator"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            COMIC SHOP LOCATOR
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card">
+                                    <img
+                                        className="card-img-custom"
+                                        src="/buy-dc-power-visa.svg"
+                                        alt="credit card"
+                                    />
+                                    <div className="card-body">
+                                        <h5 className="card-title">
+                                            DC POWER VISA
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer>
-                <div className="footer-nav">
+                <div className="big-footer">
                     <div className="container">
-                        <div></div>
-                        <div></div>
+                        <div className="footer-nav">
+                            <div className="footer-row">
+                                <div className="footer-col">
+                                    <h2>DC COMICS</h2>
+                                    <span>Characters</span>
+                                    <span>Comics</span>
+                                    <span>Movies</span>
+                                    <span>TV</span>
+                                    <span>Games</span>
+                                    <span>Videos</span>
+                                    <span>News</span>
+                                    <h2>SHOP</h2>
+                                    <span>Shop DC</span>
+                                    <span>Shop DC Collectibles</span>
+                                </div>
+                                <div className="footer-col">
+                                    <h2>DC</h2>
+                                    <span>Term Of Use</span>
+                                    <span>Privacy policy (New)</span>
+                                    <span>Ad Choices</span>
+                                    <span>Advertising</span>
+                                    <span>Jobs</span>
+                                    <span>Subscription</span>
+                                    <span>Talent Workshops</span>
+                                    <span>CPSC Certificates</span>
+                                    <span>Ratings</span>
+                                    <span>Shop Help</span>
+                                    <span>Contact Us</span>
+                                </div>
+                                <div className="footer-col">
+                                    <h2>SITES</h2>
+                                    <span>DC</span>
+                                    <span>MAD Magazine</span>
+                                    <span>DC Kids</span>
+                                    <span>DC Universe</span>
+                                    <span>DC Power Visa</span>
+                                </div>
+                            </div>
+                            <img
+                                className="big-logo"
+                                src="/dc-logo-bg.png"
+                                alt="big logo"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="container">

@@ -1,17 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Open Sans", sans-serif;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1200px;
 }
 
 /* HEADER ZONE */
@@ -40,31 +28,52 @@ body {
 
 /* MAIN ZONE */
 
+.jumbotron {
+    height: 400px;
+    background-image: url(/jumbotron.jpg);
+    background-size: cover;
+}
+
+.current-series {
+    background-color: #0282f9;
+    color: white;
+}
+
 .content {
     background-color: black;
     color: white;
 }
 
-.shop {
-    background-color: #0282f9;
+.content .card {
+    background-color: transparent;
+    border: 0;
     color: white;
 }
 
-.row {
-    display: flex;
-    justify-content: space-around;
-    height: 110px;
-    padding: 20px 0;
+.content .card-img-top {
+    height: 196px;
+    max-width: 100%;
 }
 
-.col {
+.shop {
+    min-height: 200px;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    background-color: #0282f9;
 }
 
-.shop-img {
-    height: 80%;
+.shop .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0282f9;
+    border: 0;
+}
+
+.shop .card-img-custom {
+    height: 80px;
 }
 
 /* FOOTER ZONE */
@@ -73,16 +82,49 @@ footer {
     background-color: #303030;
 }
 
-.footer-nav {
-    height: 300px;
+.big-footer {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 350px;
+    padding: 5px 0;
     background-image: url(/footer-bg.jpg);
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-logo {
+    transform: translate(20%, -15%);
+}
+
+.footer-row {
+    display: flex;
+    padding-top: 20px;
+    gap: 3rem;
+}
+
+.footer-col {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: x-small;
+}
+
+h2 {
+    font-size: large;
+    color: white;
+    padding-bottom: 10px;
+}
+
 .small-footer {
-    height: 70px;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 .sign-up {
@@ -93,6 +135,7 @@ footer {
 }
 
 .social {
+    font-weight: bold;
     color: #0282f9;
     display: flex;
     align-items: center;
